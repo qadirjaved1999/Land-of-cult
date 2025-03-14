@@ -6,6 +6,7 @@ import NFTLands from "./NFTLands";
 import VirtualWorld from "./VirtualWorld";
 import GloomhavenToken from "./GloomhavenToken";
 import WastelandToken from "./WastelandToken";
+import WastelandToken from "./VirtualWorld";
 
 export default function MainPage() {
   const refs = useRefs();
@@ -17,6 +18,8 @@ export default function MainPage() {
       <div ref={refs.discover} className="buy-land-section"><NFTLands /></div>
       <div ref={refs.newWorld} className="buy-land-section"><GloomhavenToken /></div>
       <div ref={refs.community} className="buy-land-section"><WastelandToken /></div>
+      <div ref={refs.community} className="buy-land-section"><VirtualWorld /></div>
+      
     </div>
   );
 }
